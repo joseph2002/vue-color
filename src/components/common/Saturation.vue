@@ -2,7 +2,9 @@
   <div class="vue-color__saturation"
     :style="{background: bgColor}"
     ref="container"
-    @mousedown="handleMouseDown">
+    @mousedown="handleMouseDown"
+    @touchmove="handleChange"
+    @touchstart="handleChange">
     <div class="vue-color__saturation--white"></div>
     <div class="vue-color__saturation--black"></div>
     <div class="vue-color__saturation--pointer" :style="{top: pointerTop, left: pointerLeft}">
